@@ -9,9 +9,6 @@
     .statistics-block p{
         font-size: 11px;
     }
-    .last-news-block{
-        height: 460px;
-    }
 }
 
 @media (min-width: 544px) and (max-width: 767px) {
