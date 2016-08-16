@@ -15,6 +15,13 @@ if ( ! function_exists( 'astana_turan_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
+	/* truncate the last news */
+	function the_truncated_post($symbol_amount) {
+		$filtered = strip_tags( preg_replace('@<style[^>]*?>.*?</style>@si', '', preg_replace('@<script[^>]*?>.*?</script>@si', '', apply_filters('the_content', get_the_content()))) );
+		echo substr($filtered, 0, strrpos(substr($filtered, 0, $symbol_amount), ' ')) . '...';
+	};
+
 function astana_turan_setup() {
 	/*
 	 * Make theme available for translation.

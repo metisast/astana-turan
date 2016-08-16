@@ -1,18 +1,44 @@
 
 @media (max-width: 543px) {
-
+    .statistics-block{
+        padding-top: 60px;
+    }
+    .statistics-block h3{
+        font-size: 14px;
+    }
+    .statistics-block p{
+        font-size: 11px;
+    }
+    .last-news-block{
+        height: 460px;
+    }
 }
 
 @media (min-width: 544px) and (max-width: 767px) {
-
+    .statistics-block{
+        padding-top: 60px;
+    }
+    .statistics-block h3{
+        font-size: 14px;
+    }
+    .statistics-block p{
+        font-size: 12px;
+    }
+    .last-news-block{
+        height: 450px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .last-news-block{
+        height: 430px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    .last-news-block{
+        height: 460px;
+    }
 }
 
 @media (min-width: 1200px) {
