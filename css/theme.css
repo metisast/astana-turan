@@ -41,6 +41,114 @@ ul.list-inline li{
     padding: 30px 0 60px 0;
     margin: 30px 0;
 }
+/* Top line */
+.top-line{
+    height: 55px;
+    background: #2a1770;
+    color: #fff;
+    margin-bottom: 33px;
+}
+.feedback-info h6{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.feedback-info .phone h6{
+    border-right: 1px solid #fff;
+}
+.vert-split{
+    border-left: 1px solid #fff;
+}
+.ad{
+    position: relative;
+    margin: 14px auto;
+    width: 1.6875rem;
+    height: 1.6875rem;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    text-align: center;
+}
+.ad p{
+    color: #ed0086;
+    font-size: 12px;
+}
+.top-bar-info a{
+    margin-top: 20px;
+
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+}
+.top-bar-info a:first-child{
+    margin-right: 30px;
+}
+/* Desktop menu */
+#desktop-menu, #mobile-menu{
+    top: 55px;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 10000;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+/* Mobile menu */
+#mobile-menu{
+    text-align: right;
+}
+#mobile-menu a{
+    color: #2a1770;
+}
+#my-button{
+    padding-top: 25px;
+    display: inline-block;
+}
+#mobile-menu .logo{
+    text-align: left;
+}
+#mobile-menu .logo img{
+    width: 35px;
+}
+.logo{
+    margin: 15px 0;
+    display: block;
+}
+#primary-menu{
+
+}
+#primary-menu > li > a{
+    display: block;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    padding: 30px 15px;
+    position: relative;
+}
+#primary-menu > li > a span{
+    font-weight: normal;
+    font-size: 12px;
+    color: #bbb;
+}
+#primary-menu > li > a:hover{
+    background: #eee;
+    text-decoration: none;
+}
+#primary-menu .sub-menu{
+    top: 96px;
+    width: 200px;
+    background: #fff;
+    z-index: 100;
+}
+#primary-menu .sub-menu a{
+    padding: 15px;
+    color: #555;
+    font-size: 13px;
+}
+#primary-menu .sub-menu a:hover{
+    text-decoration: none;
+    background: #eee;
+}
+
 /* header title */
 .title h1{
     margin-bottom: 10px;
@@ -297,4 +405,13 @@ ul.list-inline li{
 .page-up:hover{
     color: #23272c;
     background: #e0e0e0;
+}
+/* All Posts */
+article.post {
+    margin-top: 50px;
+}
+
+/* Single page */
+article.page{
+    margin-top: 100px;
 }

@@ -26,10 +26,12 @@ foreach($posts as $post): setup_postdata($post);?>
 	<div class="fw-col-md-4 fw-col-sm-6">
 		<div class="last-news-block">
 			<section class="last-news-img">
+				<a href="<?php echo $post->guid?>">
 				<?php
 					$thumbnail = get_the_post_thumbnail($post->ID, array(350));
-					echo ($thumbnail) ?  $thumbnail :  "<div class='news-demo'><i class='fa fa-image fa-3x'></i></div>";
+					echo ($thumbnail) ? $img = $thumbnail : $img =  "<img src='" . get_template_directory_uri() . '/img/no-image.png' . "'>";
 				?>
+				</a>
 			</section>
 			<section class="last-news-content">
 				<div class="fw-col-md-12">
