@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
 <?php wp_head(); ?>
 </head>
@@ -29,6 +30,11 @@
 			<div class="fw-container">
 				<div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-xs-3 ">
 					<!-- Localization -->
+					<?php // outputs a flags list (without languages names) ?>
+					<ul class="list-unstyled list-inline lang">
+						<?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?>
+					</ul>
+
 				</div>
 				<!-- Contacts -->
 				<div class="col-xl-4 col-lg-4 col-md-offset-2 col-xl-offset-0 col-lg-offset-0 hidden-md-down">
@@ -42,7 +48,7 @@
 					</div>
 				</div>
 				<!-- Alert -->
-				<div class="col-xl-2 col-lg-1 col-md-2 col-md-offset-3 col-xl-offset-0 col-lg-offset-0 col-sm-offset-4 col-sm-1 col-xs-offset-2 col-xs-2">
+				<div class="col-xl-2 col-lg-1 col-md-2 col-md-offset-3 col-xl-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-1 col-xs-offset-2 col-xs-2">
 					<div class="ad" data-status="inactive">
 						<p class="fa fa-bell pink"></p>
 					</div>
@@ -78,27 +84,28 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- Mobile menu -->
 		<div class="fw-container-fluid hidden-md-up" id="mobile-menu">
-			<div class="fw-container">
-				<div class="fw-row">
-					<div class="top-menu">
-						<div class="fw-col-md-6 fw-col-sm-6 fw-col-xs-6 logo">
-							<a href="/">
-								<img src="<?php echo get_template_directory_uri() . '/img/turan_logo.png' ?>" alt="">
-							</a>
-						</div>
-						<div class="fw-col-md-6 fw-col-sm-6 fw-col-xs-6">
-							<a id="my-button" href="#mobile-menu">
-								<i class="fa fa-bars fa-2x"></i>
-							</a>
-						</div>
-						<div style="display: none">
-							<?php wp_nav_menu( array('menu' => 'Mobile' )); ?>
+				<div class="fw-col-md-12">
+					<div class="fw-row">
+						<div class="top-menu">
+							<div class="fw-col-md-2 fw-col-sm-2 fw-col-xs-2 logo">
+								<a href="/">
+									<img src="<?php echo get_template_directory_uri() . '/img/turan_logo.png' ?>" alt="">
+								</a>
+							</div>
+							<div class="fw-col-md-10 fw-col-sm-10 fw-col-xs-10">
+								<a id="my-button" href="#mobile-menu">
+									<i class="fa fa-bars fa-2x"></i>
+								</a>
+							</div>
+							<div style="display: none">
+								<?php wp_nav_menu( array('menu' => 'Mobile' )); ?>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 
 

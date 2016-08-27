@@ -41,12 +41,30 @@ ul.list-inline li{
     padding: 30px 0 60px 0;
     margin: 30px 0;
 }
+.turan-section-slider{
+    margin-top: 30px;
+}
+.turan-section-pages{
+    margin-top: 27px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px 0;
+}
 /* Top line */
 .top-line{
     height: 55px;
     background: #2a1770;
     color: #fff;
     margin-bottom: 33px;
+}
+.lang{
+    margin-top: 15px;
+}
+.lang li{
+    margin-right: 15px;
+}
+.lang li:last-child{
+    margin-right: 0;
 }
 .feedback-info h6{
     font-size: 12px;
@@ -95,19 +113,21 @@ ul.list-inline li{
 /* Mobile menu */
 #mobile-menu{
     text-align: right;
+    height: 60px;
 }
 #mobile-menu a{
     color: #2a1770;
 }
 #my-button{
-    padding-top: 25px;
+    padding-top: 15px;
     display: inline-block;
 }
 #mobile-menu .logo{
     text-align: left;
+    margin: 10px 0;
 }
 #mobile-menu .logo img{
-    width: 35px;
+    height: 40px;
 }
 .logo{
     margin: 15px 0;
@@ -194,21 +214,22 @@ ul.list-inline li{
 }
 .speciality-block section h4{
     margin: 0;
-    font-size: 0.8rem;
     display: table-cell;
     vertical-align: middle;
+    padding: 0 5px;
+    font-size: 20px;
 }
 .speciality-block article{
     padding: 0 15px;
 }
-.speciality-block article h5{
+.speciality-block article h6{
     margin: 10px 0 0 0;
 }
-.speciality-block article h3{
+.speciality-block article h4{
     text-align: right;
     margin-top: 10px;
 }
-.speciality-block article h3 span{
+.speciality-block article h4 span{
     font-weight: 100;
 }
 /* Partners */
@@ -406,12 +427,69 @@ ul.list-inline li{
     color: #23272c;
     background: #e0e0e0;
 }
+
 /* All Posts */
 article.post {
     margin-top: 50px;
 }
 
 /* Single page */
-article.page{
-    margin-top: 100px;
+.entry-header-block{
+    margin-top: 64px;
+}
+.entry-header-block{
+    background-image: url("http://press.local/wp-content/themes/astana-turan/img/page-bg.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+.entry-header-block header h2{
+    display: inline-block;
+    color: #28156e;
+    background: #fff;
+    border-radius: 5px 0 5px 0;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+}
+/* Breadcrumbs */
+.entry-header-block .breadcrumbs a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.entry-header-block .last-item{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* All news */
+.site-main{
+    margin-top: 70px;
+}
+/* Widgets */
+.widget-area{
+    margin-top: 50px;
+}
+.widget{
+    margin-top: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+}
+.widget ul{
+    padding: 0;
+    list-style: none;
+}
+.widget ul li{
+    border-bottom: 1px solid #e0e0e0;
+}
+.widget ul li:last-child{
+    border-bottom: none;
+}
+.widget ul li a{
+    display: block;
+    font-size: 14px;
+    padding: 10px 0;
+    color: #333;
+}
+.widget ul li a span{
+    font-size: 14px;
 }

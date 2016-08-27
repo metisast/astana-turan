@@ -24,7 +24,7 @@
 		<h4><?php echo $atts['speciality_name']?></h4>
 	</section>
 	<article>
-		<h5 style="color: <?php echo $atts['speciality_color']?>"><?php echo $atts['speciality_index']?></h5>
-		<h3><?php echo $atts['speciality_price']?> тг/<span> год</span></h3>
+		<h6 style="color: <?php echo $atts['speciality_color']?>"><?php echo $atts['speciality_index']?></h6>
+		<h4><?php echo $atts['speciality_price']?> тг/<span> год</span></h4>
 	</article>
 </div>

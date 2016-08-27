@@ -147,7 +147,6 @@ function astana_turan_scripts() {
 	wp_enqueue_style( 'astana-turan-style-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	wp_enqueue_style( 'astana-turan-style-theme', get_template_directory_uri() . '/css/theme.css' );
 	wp_enqueue_style( 'astana-turan-style-media', get_template_directory_uri() . '/css/media.css' );
-	wp_enqueue_style( 'astana-turan-style-awesome', get_template_directory_uri() . '/css/font-awesome.css' );
 
 	wp_enqueue_script( 'astana-turan-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'astana-turan-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151215', true );
