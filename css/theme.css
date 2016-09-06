@@ -305,7 +305,7 @@ ul.list-inline li{
 }
 /* Last news */
 .last-news-block{
-    height: 500px;
+    height: 480px;
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
@@ -323,8 +323,10 @@ ul.list-inline li{
     height: 100px;
     overflow: hidden;
 }
+
 .last-news-img img{
     border-bottom: 2px solid #1eaace;
+    width: 100%;
 }
 .last-news-content article{
     margin-top: 15px;
@@ -336,6 +338,7 @@ ul.list-inline li{
 }
 .last-news-content img{
     display: none;
+    width: 100%;
 }
 .news-demo{
     height: 210px;
@@ -431,6 +434,33 @@ ul.list-inline li{
 /* All Posts */
 article.post {
     margin-top: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+}
+article.post .entry-title a{
+    color: #333;
+    margin: 15px 0 30px 0;
+    display: block;
+}
+article.post .entry-content{
+    margin-top: 0;
+}
+article.post .entry-meta{
+    margin: 15px 0;
+    font-size: 14px;
+    font-style: italic;
+}
+.read-more{
+    text-align: right;
+    display: block;
+    margin: 10px 0;
+}
+.read-more a{
+    color: #fff;
+}
+.nav-links a{
+    color: #333;
 }
 
 /* Single page */
@@ -492,4 +522,29 @@ article.post {
 }
 .widget ul li a span{
     font-size: 14px;
+}
+/* Pagination */
+span.page-numbers{
+    border: 1px solid transparent;
+    background: #2a1770;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+a.page-numbers{
+    color: #2a1770;
+    border: 1px solid #2a1770;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    transition: all 0.2s ease;
+}
+a.page-numbers:hover{
+    text-decoration: none;
+    background: #2a1770;
+    color: #fff;
 }

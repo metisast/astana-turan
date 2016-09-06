@@ -158,6 +158,28 @@ function astana_turan_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
+/* Pagination */
+function my_pagenavi() {
+	global $wp_query;
+
+	$big = 999999999; // уникальное число для замены
+
+	$args = array(
+		'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) )
+	,'format' => ''
+	,'current' => max( 1, get_query_var('paged') )
+	,'total' => $wp_query->max_num_pages
+	);
+
+	$result = paginate_links( $args );
+
+	// удаляем добавку к пагинации для первой страницы
+	$result = str_replace( '/page/1/', '', $result );
+
+	echo $result;
+}
+
 add_action( 'wp_enqueue_scripts', 'astana_turan_scripts' );
 
 /**

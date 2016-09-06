@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/footer.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/functions.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/header.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-parts/content.php" charset="UTF-8" />
   </component>
 </project>
